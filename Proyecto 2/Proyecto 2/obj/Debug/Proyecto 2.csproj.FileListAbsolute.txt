@@ -1,0 +1,13 @@
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\bin\Debug\Proyecto 2.exe.config
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\bin\Debug\Proyecto 2.exe
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\bin\Debug\Proyecto 2.pdb
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto 2.csproj.AssemblyReference.cache
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto_2.Form1.resources
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto_2.frmclientes.resources
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto_2.frmempleados.resources
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto_2.frmproductos.resources
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto_2.Properties.Resources.resources
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto 2.csproj.GenerateResource.cache
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto 2.csproj.CoreCompileInputs.cache
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto 2.exe
+C:\Users\elpro\OneDrive\Desktop\REPOSITORIOS\Proyecto2\Proyecto2\Proyecto 2\Proyecto 2\obj\Debug\Proyecto 2.pdb
