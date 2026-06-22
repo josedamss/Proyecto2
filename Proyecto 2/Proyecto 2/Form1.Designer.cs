@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panelcontenedor = new System.Windows.Forms.Panel();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelcontenedor = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,14 +49,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // panelcontenedor
-            // 
-            this.panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelcontenedor.Location = new System.Drawing.Point(0, 24);
-            this.panelcontenedor.Name = "panelcontenedor";
-            this.panelcontenedor.Size = new System.Drawing.Size(800, 426);
-            this.panelcontenedor.TabIndex = 1;
             // 
             // inicioToolStripMenuItem
             // 
@@ -86,6 +78,14 @@
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
+            // panelcontenedor
+            // 
+            this.panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcontenedor.Location = new System.Drawing.Point(0, 24);
+            this.panelcontenedor.Name = "panelcontenedor";
+            this.panelcontenedor.Size = new System.Drawing.Size(800, 426);
+            this.panelcontenedor.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,11 +106,11 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Panel panelcontenedor;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.Panel panelcontenedor;
     }
 }
 

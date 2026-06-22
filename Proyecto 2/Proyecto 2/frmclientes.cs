@@ -16,5 +16,30 @@ namespace Proyecto_2
         {
             InitializeComponent();
         }
+
+        private void txtdirecc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnmodi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btneli_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|c:\\users\\elpro\\onedrive\\desktop\\repositorios\\proyecto2\\proyecto2\\proyecto 2\\proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|c:\\users\\elpro\\onedrive\\desktop\\repositorios\\proyecto2\\proyecto2\\proyecto 2\\proyecto 2\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|c:\\users\\elpro\\onedrive\\desktop\\repositorios\\proyecto2\\proyecto2\\proyecto 2\\proyecto 2\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|c:\\users\\elpro\\onedrive\\desktop\\repositorios\\proyecto2\\proyecto2\\proyecto 2\\proyecto 2\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|c:\\users\\elpro\\onedrive\\desktop\\repositorios\\proyecto2\\proyecto2\\proyecto 2\\proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\proyecto 2\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\proyecto 2\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\proyecto 2\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC227B94-89B0-4986-8A4D-4DE0501C952F}|Proyecto 2\\Proyecto 2.csproj|solutionrelative:proyecto 2\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,32 +38,43 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "frmclientes.cs",
+              "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmclientes.cs",
+              "RelativeDocumentMoniker": "Proyecto 2\\frmclientes.cs",
+              "ToolTip": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmclientes.cs",
+              "RelativeToolTip": "Proyecto 2\\frmclientes.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T15:38:43.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto 2\\Form1.cs",
               "ToolTip": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\Form1.cs",
               "RelativeToolTip": "Proyecto 2\\Form1.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA2wDAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwDAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T15:27:53.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T15:27:53.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "frmempleados.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmempleados.cs",
               "RelativeDocumentMoniker": "Proyecto 2\\frmempleados.cs",
               "ToolTip": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmempleados.cs [Dise\u00F1o]",
               "RelativeToolTip": "Proyecto 2\\frmempleados.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T15:23:51.513Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-17T15:23:51.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmproductos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmproductos.cs",
               "RelativeDocumentMoniker": "Proyecto 2\\frmproductos.cs",
@@ -71,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "frmclientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\frmclientes.cs",
               "RelativeDocumentMoniker": "Proyecto 2\\frmclientes.cs",
@@ -83,15 +98,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto 2\\Form1.cs",
               "ToolTip": "C:\\Users\\elpro\\OneDrive\\Desktop\\REPOSITORIOS\\Proyecto2\\Proyecto2\\Proyecto 2\\Proyecto 2\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Proyecto 2\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T15:15:10.573Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-17T15:15:10.573Z"
             }
           ]
         }
