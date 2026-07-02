@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnexcel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgridproduct = new System.Windows.Forms.DataGridView();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.btneli = new System.Windows.Forms.Button();
             this.btnmodi = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
-            this.txtdirecc = new System.Windows.Forms.TextBox();
+            this.txtstock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtcell = new System.Windows.Forms.TextBox();
+            this.txtcat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridproduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.btnexcel);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dtgridproduct);
             this.panel2.Controls.Add(this.btnbuscar);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label6);
@@ -68,6 +68,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(549, 426);
             this.panel2.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(353, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(89, 23);
+            this.comboBox1.TabIndex = 14;
             // 
             // btnexcel
             // 
@@ -92,13 +101,13 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "6 Productos * Verde: Stock normal * Rojo: Stock bajo ( < 5 unidades )";
             // 
-            // dataGridView1
+            // dtgridproduct
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(513, 249);
-            this.dataGridView1.TabIndex = 12;
+            this.dtgridproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridproduct.Location = new System.Drawing.Point(17, 81);
+            this.dtgridproduct.Name = "dtgridproduct";
+            this.dtgridproduct.Size = new System.Drawing.Size(513, 249);
+            this.dtgridproduct.TabIndex = 12;
             // 
             // btnbuscar
             // 
@@ -137,11 +146,11 @@
             this.panel1.Controls.Add(this.btneli);
             this.panel1.Controls.Add(this.btnmodi);
             this.panel1.Controls.Add(this.btnguardar);
-            this.panel1.Controls.Add(this.txtdirecc);
+            this.panel1.Controls.Add(this.txtstock);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtcorreo);
+            this.panel1.Controls.Add(this.txtprecio);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtcell);
+            this.panel1.Controls.Add(this.txtcat);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtnombre);
             this.panel1.Controls.Add(this.label2);
@@ -150,6 +159,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 426);
             this.panel1.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Inter SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(23, 352);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(308, 15);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "ADVERTENCIA: STOCK BAJO - Requiere Reposicion";
             // 
             // btneli
             // 
@@ -189,14 +209,15 @@
             this.btnguardar.TabIndex = 0;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
-            // txtdirecc
+            // txtstock
             // 
-            this.txtdirecc.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdirecc.Location = new System.Drawing.Point(26, 308);
-            this.txtdirecc.Name = "txtdirecc";
-            this.txtdirecc.Size = new System.Drawing.Size(316, 22);
-            this.txtdirecc.TabIndex = 8;
+            this.txtstock.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtstock.Location = new System.Drawing.Point(26, 308);
+            this.txtstock.Name = "txtstock";
+            this.txtstock.Size = new System.Drawing.Size(316, 22);
+            this.txtstock.TabIndex = 8;
             // 
             // label5
             // 
@@ -208,13 +229,13 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Stock Actual :";
             // 
-            // txtcorreo
+            // txtprecio
             // 
-            this.txtcorreo.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcorreo.Location = new System.Drawing.Point(26, 218);
-            this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(316, 22);
-            this.txtcorreo.TabIndex = 6;
+            this.txtprecio.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtprecio.Location = new System.Drawing.Point(26, 218);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(316, 22);
+            this.txtprecio.TabIndex = 6;
             // 
             // label4
             // 
@@ -226,13 +247,13 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Precio de Venta : *";
             // 
-            // txtcell
+            // txtcat
             // 
-            this.txtcell.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcell.Location = new System.Drawing.Point(26, 136);
-            this.txtcell.Name = "txtcell";
-            this.txtcell.Size = new System.Drawing.Size(316, 22);
-            this.txtcell.TabIndex = 4;
+            this.txtcat.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcat.Location = new System.Drawing.Point(26, 136);
+            this.txtcat.Name = "txtcat";
+            this.txtcat.Size = new System.Drawing.Size(316, 22);
+            this.txtcat.TabIndex = 4;
             // 
             // label3
             // 
@@ -272,26 +293,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Datos del Productos";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(353, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 23);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Inter SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(23, 352);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(308, 15);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "ADVERTENCIA: STOCK BAJO - Requiere Reposicion";
-            // 
             // frmproductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,9 +303,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmproductos";
             this.Text = "frmproductos";
+            this.Load += new System.EventHandler(this.frmproductos_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridproduct)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -316,7 +318,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnexcel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgridproduct;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;
@@ -324,11 +326,11 @@
         private System.Windows.Forms.Button btneli;
         private System.Windows.Forms.Button btnmodi;
         private System.Windows.Forms.Button btnguardar;
-        private System.Windows.Forms.TextBox txtdirecc;
+        private System.Windows.Forms.TextBox txtstock;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtcorreo;
+        private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtcell;
+        private System.Windows.Forms.TextBox txtcat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;

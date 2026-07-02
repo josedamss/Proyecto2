@@ -18,10 +18,7 @@ namespace Proyecto_2
             InitializeComponent();
         }
 
-        private void txtdirecc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
@@ -159,5 +156,83 @@ namespace Proyecto_2
         {
             mostrardatos(txtbuscarcliente.Text);
         }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+            
+            string texto = txtnombre.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                lberrornombre.Text = "El nombre no puede estar vacío.";
+                lberrornombre.Visible = true;
+            }
+            
+            else if (texto.Length < 3)
+            {
+                lberrornombre.Text = "Debe tener al menos 3 caracteres.";
+                lberrornombre.Visible = true;
+            }
+            
+            else
+            {
+                lberrornombre.Visible = false;
+            }
+        }
+
+        private void txtcell_TextChanged(object sender, EventArgs e)
+        {
+            string texto = txtcell.Text.Trim();
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                lberrorcell.Text = "El Celular no puede estar vacio.";
+                lberrorcell.Visible = true;
+            }
+            else if (texto.Length < 8)
+            {
+                lberrorcell.Text = "Debe tener al menos 8 digitos.";
+                lberrorcell.Visible = true;
+
+            }
+            else 
+            { 
+                lberrorcell.Visible = false; 
+            }
+        }
+
+        private void txtcorreo_TextChanged(object sender, EventArgs e)
+        {
+            string texto = txtcorreo.Text.Trim();
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                lberrorcorreo.Text = "Escriba su dominio, ejemplo: abc@gmail.com";
+                lberrorcorreo.Visible = true;
+            }
+            else
+            {
+                lberrorcorreo.Visible= false;
+            }
+
+        }
+
+        private void txtdirecc_TextChanged(object sender, EventArgs e)
+        {
+            string texto = txtdirecc.Text.Trim();
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                lberrordirecc.Text = "La direccion no puede estar vacia";
+                lberrordirecc.Visible = true;
+
+            }
+            else if (texto.Length < 10)
+            {
+                lberrordirecc.Text = "Ingrese al menos 10 caracteres";
+                lberrordirecc.Visible= true;
+            }
+            else
+            {
+                lberrordirecc.Visible = false;
+            }
     }
+}
 }
