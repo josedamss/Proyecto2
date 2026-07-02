@@ -34,9 +34,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dtgridproduct = new System.Windows.Forms.DataGridView();
             this.btnbuscar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbcategoria = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btneli = new System.Windows.Forms.Button();
             this.btnmodi = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtcat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.dtgridproduct);
             this.panel2.Controls.Add(this.btnbuscar);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtbuscar);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(413, 22);
             this.panel2.Name = "panel2";
@@ -122,13 +122,14 @@
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtbuscar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(17, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 22);
-            this.textBox1.TabIndex = 11;
+            this.txtbuscar.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbuscar.Location = new System.Drawing.Point(17, 29);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(321, 22);
+            this.txtbuscar.TabIndex = 11;
+            this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // label6
             // 
@@ -142,6 +143,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cbcategoria);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.btneli);
             this.panel1.Controls.Add(this.btnmodi);
@@ -150,7 +152,6 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtprecio);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtcat);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtnombre);
             this.panel1.Controls.Add(this.label2);
@@ -159,6 +160,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 426);
             this.panel1.TabIndex = 3;
+            // 
+            // cbcategoria
+            // 
+            this.cbcategoria.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbcategoria.FormattingEnabled = true;
+            this.cbcategoria.Location = new System.Drawing.Point(26, 143);
+            this.cbcategoria.Name = "cbcategoria";
+            this.cbcategoria.Size = new System.Drawing.Size(316, 23);
+            this.cbcategoria.TabIndex = 12;
             // 
             // label8
             // 
@@ -247,14 +257,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Precio de Venta : *";
             // 
-            // txtcat
-            // 
-            this.txtcat.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcat.Location = new System.Drawing.Point(26, 136);
-            this.txtcat.Name = "txtcat";
-            this.txtcat.Size = new System.Drawing.Size(316, 22);
-            this.txtcat.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -320,7 +322,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dtgridproduct;
         private System.Windows.Forms.Button btnbuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btneli;
@@ -330,12 +332,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtcat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbcategoria;
     }
 }

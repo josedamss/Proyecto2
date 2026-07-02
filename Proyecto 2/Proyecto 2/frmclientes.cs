@@ -22,29 +22,62 @@ namespace Proyecto_2
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.CurrentRow != null)
+            {
+                string id_seleccionado = dataGridView1.CurrentRow.Cells["id_clientes"].Value.ToString();
+                Conexion conexion = new Conexion();
+                using (MySqlConnection conn = conexion.ObtenerConexion())
+                {
+                    conn.Open();
+                    string sql_modificar = "UPDATE clientes SET nombre = @nombre, telefono = @telefono, correo = @correo, direccion = @direccion WHERE id_clientes = @id";
+                    MySqlCommand comando = new MySqlCommand(sql_modificar, conn);
+                    comando.Parameters.AddWithValue("@nombre", txtnombre.Text);
+                    comando.Parameters.AddWithValue("@telefono", txtcell.Text);
+                    comando.Parameters.AddWithValue("@correo", txtcorreo.Text);
+                    comando.Parameters.AddWithValue("@direccion", txtdirecc.Text);
+                    comando.Parameters.AddWithValue("@id", id_seleccionado);
+                    comando.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Registro modificado correctamente.");
+                    mostrardatos();
 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un registro de la tabla primero.");
+            }
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
             string error = "";
 
-            if (txtnombre.Text.Length < 3)
-                error += "\nEl nombre debe tener al menos 3 caracteres.";
-            if (txtnombre.Text == "")
-                error += "\nEl nombre no puede estar vacío.";
-            if (txtcell.Text.Length < 8)
-                error += "\nEl teléfono debe tener al menos 8 caracteres.";
-            if (txtcell.Text == "")
-                error += "\nEl teléfono no puede estar vacío.";
-            if (txtcorreo.Text.Length < 20)
-                error += "\nEl correo debe tener al menos 20 caracteres.";
-            if (txtcorreo.Text == "")
-                error += "\nEl correo no puede estar vacío.";
-            if (txtdirecc.Text.Length < 10)
-                error += "\nLa dirección debe tener al menos 10 caracteres.";
-            if (txtdirecc.Text == "")
-                error += "\nLa dirección no puede estar vacía.";
+            var validaciones = new[]
+            {
+                new { Condicion = txtnombre.Text.Length < 3, Mensaje = "\nEl nombre debe tener al menos 3 caracteres." },
+                new { Condicion = string.IsNullOrWhiteSpace(txtnombre.Text), Mensaje = "\nEl nombre no puede estar vacío." },
+                new { Condicion = txtcell.Text.Length < 8, Mensaje = "\nEl celular debe tener al menos 8 dígitos." },
+                new { Condicion = string.IsNullOrWhiteSpace(txtcell.Text), Mensaje = "\nEl celular no puede estar vacío." },
+                new { Condicion = string.IsNullOrWhiteSpace(txtcorreo.Text), Mensaje = "\nEl correo no puede estar vacío." },
+                new { Condicion = string.IsNullOrWhiteSpace(txtdirecc.Text), Mensaje = "\nLa dirección no puede estar vacía." },
+
+
+            };
+
+            for (int i = 0; i < validaciones.Length; i++)
+            {
+                if (validaciones[i].Condicion)
+                {
+                    error += validaciones[i].Mensaje;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show(error, "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             if (error == "")
             {
@@ -97,39 +130,43 @@ namespace Proyecto_2
             }
         }
 
-        private void mostrardatos(string buscar = "")
-        {
-            Conexion conexion = new Conexion();
-            using (MySqlConnection conn = conexion.ObtenerConexion())
-            {
-                conn.Open();
-                string query = @"SELECT
-                        id_clientes,
-                        nombre,
-                        correo,
-                        telefono,
-                        direccion
-                    FROM clientes
-                    WHERE nombre LIKE @buscar
-                       OR correo LIKE @buscar
-                       OR telefono LIKE @buscar";
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@buscar", "%" + buscar + "%");
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
-                    {
-                        DataTable tabla = new DataTable();
-                        adapter.Fill(tabla);
-                        dataGridView1.DataSource = tabla;
-                    }
-                }
-                conn.Close();
-            }
-        }
-
         private void btneli_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int idCliente = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id_clientes"].Value);
+                try
+                {
+                    Conexion conexion = new Conexion();
+                    using (MySqlConnection conn = conexion.ObtenerConexion())
+                    {
+                        conn.Open();
+                        string query = "DELETE FROM clientes WHERE id_clientes = @id";
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@id", idCliente);
+                            int rowsAffected = cmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Cliente eliminado correctamente.");
+                                mostrardatos();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pudo eliminar el cliente.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un cliente para eliminar.");
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -227,12 +264,42 @@ namespace Proyecto_2
             else if (texto.Length < 10)
             {
                 lberrordirecc.Text = "Ingrese al menos 10 caracteres";
-                lberrordirecc.Visible= true;
+                lberrordirecc.Visible = true;
             }
             else
             {
                 lberrordirecc.Visible = false;
             }
+        }
+
+        private void mostrardatos(string buscar = "")
+        {
+            Conexion conexion = new Conexion();
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = @"SELECT
+                        id_clientes,
+                        nombre,
+                        correo,
+                        telefono,
+                        direccion
+                    FROM clientes
+                    WHERE nombre LIKE @buscar
+                       OR correo LIKE @buscar
+                       OR telefono LIKE @buscar";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@buscar", "%" + buscar + "%");
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        DataTable tabla = new DataTable();
+                        adapter.Fill(tabla);
+                        dataGridView1.DataSource = tabla;
+                    }
+                }
+                conn.Close();
+            }
+        }
     }
-}
 }
